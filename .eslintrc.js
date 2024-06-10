@@ -12,4 +12,12 @@ module.exports = {
   rules: {
     // Kişiselleştirilmiş ESLint kurallarınız buraya
   },
+  overrides: [
+    {
+      files: ["**/*.test.js", "**/*.test.jsx", "**/*.spec.js", "**/*.spec.jsx"],
+      env: {
+        jest: true,
+      },
+    },
+  ],
 };
