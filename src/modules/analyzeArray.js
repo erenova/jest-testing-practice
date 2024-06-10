@@ -10,7 +10,7 @@ export default function analyzeArray(arr) {
   let sum = 0;
   let min = arr[0];
   let max = arr[0];
-  const average = arr.forEach((num) => {
+  arr.forEach((num) => {
     sum += num;
     if (num < min) min = sum;
     if (num > max) max = num;
